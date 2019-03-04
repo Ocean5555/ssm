@@ -12,6 +12,7 @@ public class User {
     private String name;
     private String username;
     private String password;
+    private float salary;
     private Integer age;
     @DateTimeFormat(pattern = "yyyy-MM-dd")
     @JsonFormat(pattern="yyyy-MM-dd HH:mm:ss" , timezone="GMT+8")
@@ -52,6 +53,13 @@ public class User {
         this.age = age;
     }
 
+    public float getSalary() {
+        return salary;
+    }
+
+    public void setSalary(float salary) {
+        this.salary = salary;
+    }
     public Date getBirthday() {
         return birthday;
     }

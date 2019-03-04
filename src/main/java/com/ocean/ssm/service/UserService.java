@@ -20,6 +20,7 @@ public class UserService {
             user.setUsername("preference");
             user.setPassword("asdqwe123");
             user.setAge(27);
+            user.setSalary(3000.00f);
             Date birthday = null;
             try {
                 birthday = new SimpleDateFormat("yyyy-MM-dd").parse("1992-05-17");
